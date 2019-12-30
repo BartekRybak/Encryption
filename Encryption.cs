@@ -8,11 +8,6 @@ namespace G_Shade.Core
 {
     class Encryption
     {
-        // Szyfrowanie Tekst + Hasło > Obiekt Json składający
-        // sie z IV i zaszyfrowanych danych w Base64;
-
-        //Odszyforwaywanie obiekt Json z danyni i IV > Odszyfrowane Dane
-
         public static byte[] Encrypt(string text,byte[] key,byte[] IV)
         {
             using (Aes aes = Aes.Create())
